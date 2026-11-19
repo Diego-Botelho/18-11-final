@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .btn {
+    @apply border-4 border-ink font-bold shadow-press transition-transform duration-100 motion-reduce:transition-none;
+  }
+  .btn:hover { transform: translate(3px, 3px); box-shadow: 2px 2px 0 #f5be08; }
+  .field {
+    @apply mt-1 w-full rounded-lg border-4 border-ink bg-white px-3 py-2 font-medium focus:outline-none focus-visible:ring-4 focus-visible:ring-blue;
+  }
+}
+
+dialog::backdrop { background: rgba(23, 20, 58, 0.55); }
